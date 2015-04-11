@@ -13,7 +13,7 @@
     "url": "http://andregarzia.com"
   },
   "icons": {
-    "60": "/style/icons/icon_60.png",
-    "128": "/style/icons/icon_128.png"
+    "60": "/memos/style/icons/icon_60.png",
+    "128": "/memos/style/icons/icon_128.png"
   }
 }
