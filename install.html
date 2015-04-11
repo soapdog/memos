@@ -10,7 +10,7 @@
     var installButton = document.querySelector("#install")
 
     installButton.addEventListener("click", function() {
-        var manifestLocation = "http://localhost:8081/package.webapp"; // your domain here
+        var manifestLocation = "http://soapdog.github.com/memos/package.webapp"; // your domain here
         var installRequest = navigator.mozApps.installPackage(manifestLocation);
 
         installRequest.onsuccess = function(data) {

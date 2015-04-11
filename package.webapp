@@ -2,7 +2,7 @@
   "name": "Memos",
   "version": "1.1",
   "description": "A simple memo taking app",
-  "package_path": "http://localhost:8081/memo.zip",
+  "package_path": "http://soapdog.github.com/memos/memo.zip",
   "permissions": {
     "storage": {
       "description": "Required for storing and retrieving notes."
