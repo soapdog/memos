@@ -11,7 +11,7 @@
 
     installButton.addEventListener("click", function() {
         var manifestLocation = "http://soapdog.github.com/memos/package.webapp"; // your domain here
-        var installRequest = navigator.mozApps.installPackage(manifestLocation);
+        var installRequest = navigator.mozApps.install(manifestLocation);
 
         installRequest.onsuccess = function(data) {
             // App installed successfully!
