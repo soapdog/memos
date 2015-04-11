@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina de instalação</title>
+</head>
+<body>
+<h1>Clique para instalar</h1>
+<button id="install">Instalar</button>
+<script>
+    var installButton = document.querySelector("#install")
+
+    installButton.addEventListener("click", function() {
+        var manifestLocation = "http://localhost:8081/package.webapp"; // your domain here
+        var installRequest = navigator.mozApps.installPackage(manifestLocation);
+
+        installRequest.onsuccess = function(data) {
+            // App installed successfully!
+            alert("Aplicativo instalado");
+        };
+
+        installRequest.onerror = function(err) {
+            // App couldn't be installed!
+            console.log("Install error!");
+            console.log(err)
+            alert("Deu chabú!");
+        };
+    })
+</script>
+</body>
+
+</html>
